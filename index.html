@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>h.vanke.uk - 导航页</title>
+    <!-- 引入Google Fonts的Roboto字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* * 整体页面样式 (仿Google风格)
+         */
+        body {
+            font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Microsoft YaHei", sans-serif;
+            background-color: #f8f9fa; /* Google常用的浅灰色背景 */
+            color: #202124; /* Google的主要文字颜色 */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* 顶部对齐，更适合桌面浏览 */
+            min-height: 100vh;
+            padding-top: 5vh; /* 从顶部留出一些空间 */
+            box-sizing: border-box;
+        }
+
+        /* * 内容容器样式
+         */
+        .container {
+            background-color: #ffffff;
+            padding: 32px 40px;
+            border-radius: 8px;
+            /* Google风格的卡片阴影 */
+            box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 2px 6px 2px rgba(60, 64, 67, .15);
+            max-width: 800px;
+            width: 90%;
+            box-sizing: border-box;
+        }
+
+        /* * 主标题样式
+         */
+        h1 {
+            color: #3c4043;
+            font-size: 24px;
+            font-weight: 500; /* 使用更粗的字重 */
+            margin-top: 0;
+            margin-bottom: 24px;
+            text-align: center;
+            letter-spacing: .5px;
+        }
+
+        /* * 表格样式
+         */
+        table {
+            width: 100%;
+            border-collapse: collapse; /* 合并边框 */
+            text-align: left;
+        }
+
+        th, td {
+            padding: 16px 8px;
+            border-bottom: 1px solid #e8eaed; /* Google风格的分割线 */
+            vertical-align: middle; /* 垂直居中 */
+        }
+
+        thead th {
+            color: #5f6368; /* 表头文字颜色 */
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none; /* 移除最后一行数据的下边框 */
+        }
+
+        td {
+          font-size: 16px;
+          color: #3c4043;
+        }
+
+        td a {
+            color: #1a73e8; /* Google标志性的蓝色链接 */
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        td a:hover {
+            text-decoration: underline;
+            color: #1967d2; /* 悬停时颜色加深 */
+        }
+
+        /* * 移动设备响应式设计
+         */
+        @media (max-width: 600px) {
+            body {
+              align-items: flex-start;
+              padding-top: 0;
+            }
+            .container {
+                padding: 24px;
+                width: 100%;
+                min-height: 100vh;
+                border-radius: 0;
+                box-shadow: none;
+                padding-top: 40px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            th, td {
+                padding: 14px 4px;
+            }
+
+            td {
+              font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 主内容容器 -->
+    <div class="container">
+        <h1>vanke.uk 转链接导航页</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>域名</th>
+                    <th>说明</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="https://adspower.vanke.uk" target="_blank" rel="noopener noreferrer">adspower.vanke.uk</a></td>
+                    <td>AdsPower 指纹浏览器链接</td>
+                </tr>
+                <tr>
+                    <td><a href="https://vultr.vanke.uk" target="_blank" rel="noopener noreferrer">vultr.vanke.uk</a></td>
+                    <td>美国 VPS 主机服务商</td>
+                </tr>
+                <tr>
+                    <td><a href="https://gorelay.vanke.uk" target="_blank" rel="noopener noreferrer">gorelay.vanke.uk</a></td>
+                    <td>专线中转平台</td>
+                </tr>
+                <!-- 您可以在这里添加更多行 -->
+                <!-- 
+                <tr>
+                    <td><a href="https://example.vanke.uk" target="_blank" rel="noopener noreferrer">example.vanke.uk</a></td>
+                    <td>这是一个示例说明</td>
+                </tr>
+                -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
